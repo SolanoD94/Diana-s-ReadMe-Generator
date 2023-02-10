@@ -1,5 +1,5 @@
 
-# ReadMe File Generator  ![License Badge](https://img.shields.io/badge/License-${data.license}-blueviolet)
+# ReadMe File Generator  ![License Badge](https://img.shields.io/badge/License-${license}-blueviolet)
 
 ## Table of Content
 - [Project description](#Description)
