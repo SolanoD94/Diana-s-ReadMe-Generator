@@ -18,9 +18,7 @@ Create professional ReadMe files for future projects.
 ## Installation
 run command to install dependencies
 
-\`\`\`
-npm i
-\`\`\`
+`npm i`
 
 ## Contribution
 Improve design

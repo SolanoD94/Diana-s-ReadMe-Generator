@@ -34,9 +34,9 @@ const questions = [
       },
     {
       type: 'list',
-      message: 'Choose a licence type.',
-      name: 'licence',
-      choices: ["MIT", "ISC", "GNU GPLv3", "Apache", "none"],
+      message: 'Choose a license type.',
+      name: 'license',
+      choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "none"],
       validate: function(answer){
         if(answer === "none"){
           return val(" ")
@@ -49,7 +49,7 @@ const questions = [
     {
       type: 'input',
       message: 'Let users know how they can contribute to your project.',
-      name: 'crontribution',
+      name: 'contribution',
       default: 'front-end'
     },
     {
@@ -66,8 +66,14 @@ const questions = [
     },
     {
       type: 'input',
+      message: 'Insert deployment link',
+      name: 'deployment'
+    },
+    {
+      type: 'input',
       message: 'Write your Github link.',
       name: 'github',
+      default: 'https://github.com/SolanoD94',
       validate: function(answer){
         if(answer.length < 1) {
           return console.log("You need to write the link to your Github repo.");
@@ -79,6 +85,7 @@ const questions = [
       type: 'input',
       message: 'Write your email',
       name: 'email',
+      default: 'solano.diana@hotmail.com'
     }
   ];
   

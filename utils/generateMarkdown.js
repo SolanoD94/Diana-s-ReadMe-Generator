@@ -1,19 +1,18 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license != 'NONE'){
+  return '![License Badge](https://img.shields.io/badge/License-${data.license}-blueviolet)';
+} 
+return ' ';
+}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// Function to generate markdown for README
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-# ${data.title}  ![Licence Badge](https://img.shields.io/badge/Licence-${data.licence}-blueviolet)
+# ${data.title}  ${renderLicenseBadge(data.license)}
 
 ## Table of Content
 - [Project description](#Description)
@@ -21,7 +20,8 @@ function generateMarkdown(data) {
 - [Installation](#Installation)
 - [Tests](#Tests)
 - [Contribution](#Contribution)
-- [Licence](#Licence)
+- [License](#License)
+- [Deployment Link](#Deployment-Link)
 - [Questions](#Questions)
 
 ## Description
@@ -39,8 +39,11 @@ ${data.tests}
 ## Contribution
 ${data.contribution}
 
-## Licence
-${data.licence}
+## License
+${data.license}
+
+## Deployment Link
+${data.deployment}
 
 ## Questions
 Github: <${data.github}> \n 
