@@ -1,5 +1,5 @@
 
-# ReadMe File Generator   
+# ReadME file Generator  ![License Badge](https://img.shields.io/badge/License-MIT-blueviolet)
 
 ## Table of Content
 - [Project description](#Description)
@@ -12,10 +12,10 @@
 - [Questions](#Questions)
 
 ## Description
-CLI Application that automatically creates a ReadMe file with all basic characteristics.
+CLI Application that automatically creates a ReadMe file with its characteristics.
 
 ## Usage
-Create professional ReadMe files for future projects.
+Create professional ReadMe files for future projects from de CLI
 
 ## Installation
 run npm i command to install dependencies
@@ -27,7 +27,7 @@ run command npm run test
 front-end
 
 ## License
-NONE
+MIT
 
 ## Deployment Link
 
