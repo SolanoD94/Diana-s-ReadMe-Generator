@@ -28,33 +28,41 @@ const questions = [
       }
     },
     {
-      type: 'input',
-      message: 'Describe the instalattion process of your app',
-      name: 'installation',
-    },
-    {
         type: 'input',
-        message: 'Project usage?',
+        message: 'Explain the user how they can use the project.',
         name: 'usage',
       },
-    {
-        type: 'input',
-        message: 'Contribution Info?',
-        name: 'crontribution',
-    },
-    {
+      {
         type: 'list',
         message: 'Choose a licence type.',
         name: 'licence',
-        choices: ["MIT", "ISC", "GNUPLv3"],
+        choices: ["MIT", "ISC", "GNU GPLv3", "Apache", "none"],
+        validate: function(answer){
+          if(answer === "none"){
+            return val(" ")
+          }
+        },
         filter(val) {
-            return val.toLowerCase();
+            return val.toUpperCase();
         }
     },
     {
+        type: 'input',
+        message: 'Let users know how they can contribute to your project.',
+        name: 'crontribution',
+        default: 'front-end'
+    },
+    {
       type: 'input',
-      message: 'Write a description of the tests needed for the apps code',
+      message: 'How to install and run the project?',
+      name: 'installation',
+      default: 'run npm i command to install dependencies'
+    },
+    {
+      type: 'input',
+      message: 'Describe the tests needed for your app to work.',
       name: 'tests',
+      default: 'run command npm run test'
   },
     {
         type: 'input',

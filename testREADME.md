@@ -1,34 +1,35 @@
 
-# ReadMe File Generator  ![Licence Badge](https://img.shields.io/badge/Licence-mit-blueviolet)
+# ReadMe File Generator  ![Licence Badge](https://img.shields.io/badge/Licence-APACHE-blueviolet)
 
 ## Table of Content
 - [Project description](#Description)
 - [Usage](#Usage)
-- [Contribution](#Contribution)
 - [Installation](#Installation)
-- [Licence](#Licence)
 - [Tests](#Tests)
+- [Contribution](#Contribution)
+- [Licence](#Licence)
 - [Questions](#Questions)
 
 ## Description
-Command-line application that generates 
-
-## Installation
-test
+CLI application that automatically creates a ReadMe File with all basic needs.
 
 ## Usage
-test
+Create Professional ReadME files for futur projects
+
+## Installation
+run npm i command to install dependencies
+
+## Tests
+run command npm run test
 
 ## Contributing
 undefined
 
-## Tests
-test
-
 ## Licence
-mit
+APACHE
 
 ## Questions
-Github: <https://github.com/SolanoD94>
+Github: <https://github.com/SolanoD94> 
+ 
 For further information send me an Email to: <solano.diana@hotmail.com>
 
