@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// Questions for user input
+// Questions for user input with conditions
 const questions = [
     {
       type: 'input',
@@ -32,25 +32,25 @@ const questions = [
         message: 'Explain the user how they can use the project.',
         name: 'usage',
       },
-      {
-        type: 'list',
-        message: 'Choose a licence type.',
-        name: 'licence',
-        choices: ["MIT", "ISC", "GNU GPLv3", "Apache", "none"],
-        validate: function(answer){
-          if(answer === "none"){
-            return val(" ")
-          }
-        },
-        filter(val) {
-            return val.toUpperCase();
+    {
+      type: 'list',
+      message: 'Choose a licence type.',
+      name: 'licence',
+      choices: ["MIT", "ISC", "GNU GPLv3", "Apache", "none"],
+      validate: function(answer){
+        if(answer === "none"){
+          return val(" ")
         }
+      },
+      filter(val) {
+          return val.toUpperCase();
+      }
     },
     {
-        type: 'input',
-        message: 'Let users know how they can contribute to your project.',
-        name: 'crontribution',
-        default: 'front-end'
+      type: 'input',
+      message: 'Let users know how they can contribute to your project.',
+      name: 'crontribution',
+      default: 'front-end'
     },
     {
       type: 'input',
@@ -63,22 +63,22 @@ const questions = [
       message: 'Describe the tests needed for your app to work.',
       name: 'tests',
       default: 'run command npm run test'
-  },
-    {
-        type: 'input',
-        message: 'Write your Github link.',
-        name: 'github',
-        validate: function(answer){
-          if(answer.length < 1) {
-            return console.log("You need to write the link to your Github repo.");
-          }
-          return true;
-        }
     },
     {
-        type: 'input',
-        message: 'Write your email',
-        name: 'email',
+      type: 'input',
+      message: 'Write your Github link.',
+      name: 'github',
+      validate: function(answer){
+        if(answer.length < 1) {
+          return console.log("You need to write the link to your Github repo.");
+        }
+        return true;
+      }
+    },
+    {
+      type: 'input',
+      message: 'Write your email',
+      name: 'email',
     }
   ];
   
