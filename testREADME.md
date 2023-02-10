@@ -1,5 +1,5 @@
 
-# ReadMe File Generator  ![License Badge](https://img.shields.io/badge/License-${license}-blueviolet)
+# ReadMe File Generator   
 
 ## Table of Content
 - [Project description](#Description)
@@ -12,10 +12,10 @@
 - [Questions](#Questions)
 
 ## Description
-CLI application that automatically creates a ReadMe File with all basic needs.
+CLI Application that automatically creates a ReadMe file with all basic characteristics.
 
 ## Usage
-Create Professional ReadME files for future projects.
+Create professional ReadMe files for future projects.
 
 ## Installation
 run npm i command to install dependencies
@@ -27,7 +27,7 @@ run command npm run test
 front-end
 
 ## License
-MIT
+NONE
 
 ## Deployment Link
 

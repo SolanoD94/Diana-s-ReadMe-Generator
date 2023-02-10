@@ -37,11 +37,6 @@ const questions = [
       message: 'Choose a license type.',
       name: 'license',
       choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "none"],
-      validate: function(answer){
-        if(answer === "none"){
-          return val(" ")
-        }
-      },
       filter(val) {
           return val.toUpperCase();
       }
