@@ -1,5 +1,5 @@
 
-# ReadME file Generator  ![License Badge](https://img.shields.io/badge/License-MIT-blueviolet)
+# DS intech - My first tech blog by Diana Solano  ![License Badge](https://img.shields.io/badge/License-MIT-blueviolet)
 
 ## Table of Content
 - [Project description](#Description)
@@ -12,25 +12,25 @@
 - [Questions](#Questions)
 
 ## Description
-CLI Application that automatically creates a ReadMe file with its characteristics.
+This is a blog where developers can publish their blog posts and comment on other developers’ posts as well. 
 
 ## Usage
-Create professional ReadMe files for future projects from de CLI
+Type npm start in the console to run project.
 
 ## Installation
 run npm i command to install dependencies
 
 ## Tests
-run command npm run test
+no tests
 
 ## Contribution
-front-end
+Add a Search by Topic functionallity, add images to posts and user profile.
 
 ## License
 MIT
 
 ## Deployment Link
-
+https://whispering-fortress-36561.herokuapp.com/
 
 ## Questions
 Github: <https://github.com/SolanoD94> 
