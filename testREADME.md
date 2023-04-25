@@ -1,5 +1,5 @@
 
-# DS intech - My first tech blog by Diana Solano  ![License Badge](https://img.shields.io/badge/License-MIT-blueviolet)
+# A-SocialNetwork-BackEndAPI  ![License Badge](https://img.shields.io/badge/License-MIT-blueviolet)
 
 ## Table of Content
 - [Project description](#Description)
@@ -12,25 +12,25 @@
 - [Questions](#Questions)
 
 ## Description
-This is a blog where developers can publish their blog posts and comment on other developers’ posts as well. 
+This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## Usage
-Type npm start in the console to run project.
+Use this API to edit a database for your social media.
 
 ## Installation
 run npm i command to install dependencies
 
 ## Tests
-no tests
+run command npm run test
 
 ## Contribution
-Add a Search by Topic functionallity, add images to posts and user profile.
+Remove a user's associated thoughts when deleted.
 
 ## License
 MIT
 
 ## Deployment Link
-https://whispering-fortress-36561.herokuapp.com/
+
 
 ## Questions
 Github: <https://github.com/SolanoD94> 
